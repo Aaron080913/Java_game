@@ -10,11 +10,6 @@ const computerScoreDisplay = document.getElementById("computerScoreDisplay")
 let playerScore = 0
 let computerScore = 0
 
-choiceBtns.forEach(button => button.addEventListener("click", () => {
-    if (roundCount >= 10) {
-      endResult.textContent = "Game over. Please reset the scores to play again.";
-      return;
-    }
 
 function playGame(playerChoice){
 
