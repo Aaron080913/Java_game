@@ -7,7 +7,6 @@ const computerDisplay = document.getElementById("computerDisplay");
 const resultDisplay = document.getElementById("resultDisplay");
 const playerScoreDisplay = document.getElementById("playerScoreDisplay")
 const computerScoreDisplay = document.getElementById("computerScoreDisplay")
-const resetBtn = document.querySelector('#reset');
 let playerScore = 0
 let computerScore = 0
 
@@ -53,16 +52,5 @@ function playGame(playerChoice){
 
     }
     resetBtn.addEventListener("click", resetGame);
-
-function resetGame() {
-  playerScore = 0;
-  computerScore = 0;
-  playerChoice.textContent = 'Player: ';
-  computerChoice.textContent = 'Computer: ';
-  endResult.textContent = 'Results: ';
-  playerScoreDisplay.textContent = 'Player: 0';
-  computerScoreDisplay.textContent = 'Computer: 0';
-  document.querySelector("#score").textContent = 'Round: 0';
-}
     
 }
